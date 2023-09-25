@@ -1,0 +1,6 @@
+Interpolation ek tecnic hai jo hume allow krta hai ki hum UI element mai ts file kai variable ki value bind kr ske
+and yai one-way binding hota (Component to view page) hai and agr hum ts se variable kivalue change krte hai to uska value html pr bhi change hogi.
+and isko hum doulble crely breckt mai variable ki bing krte hai.
+
+format: {{ts file ka variable name}}
+Note:Yai field ki value ko change nhi krega kaiwal value bind krega.

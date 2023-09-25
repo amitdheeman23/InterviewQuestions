@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ParentComponent } from './parent/parent.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
-  {path:'home',component:HomeComponent,children:[
-    {path:'parent',component:ParentComponent},
-  ]}
+  {path:'parent',component:ParentComponent},
+  {path:'databinding',component:DatabindingComponent}
 ];
 
 @NgModule({

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-parent',
@@ -7,7 +6,6 @@ import { ChildComponent } from '../child/child.component';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
-  @ViewChild(ChildComponent) childComponent: ChildComponent | undefined;
   constructor() { }
   name="Amit Kumar"
   ngOnInit(): void {
@@ -21,7 +19,6 @@ export class ParentComponent implements OnInit {
   // }
 
   callChildMethod() {
-    this.childComponent?.ok();
   }
 
 

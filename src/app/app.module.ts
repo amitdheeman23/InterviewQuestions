@@ -5,14 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
-import { ChildComponent } from './child/child.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent,
     HomeComponent,
     DatabindingComponent
   ],
