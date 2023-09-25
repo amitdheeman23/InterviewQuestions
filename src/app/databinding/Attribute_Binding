@@ -1,0 +1,4 @@
+Attribute binding se hum kisi bhi attribute mai daynamicaly value set kr skte hai matlab component ts kai variable ki
+value ki sisi attribute mai directly set kr skte hai.
+
+Format: [attr.colspan]="myColSpan"

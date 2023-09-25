@@ -1,6 +1,20 @@
 <p>databinding works!</p>
-<span [innerHTML]="expression"></span><br>
-<span [innerHTML]="firstName"></span>
-<img src="assets/Images/Derfrent_betWeen_JavaSript_And_type_Script.PNG" width="120" height="120">
-<button [disabled] = 'IsDisabledClick' > Cick Here </button>  
-<!-- //Property Binding- one Way binding -->
+<h2>Attribute Example</h2>
+
+<table style="width:100%" [attr.border]="bodr" >
+    <tr>
+      <th [attr.colspan]="cols">Company</th>
+      <!-- <th>Contact</th>
+      <th>Country</th> -->
+    </tr>
+    <tr>
+      <td >Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>

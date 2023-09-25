@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databinding.component.scss']
 })
 export class DatabindingComponent implements OnInit {
-
-  //Property Binding- one Way binding
-
-  expression='Amit Sharma';
-  firstName:string="Mohan";
-  IsDisabledClick : boolean = true;
-  
+//Attribute data binding
+cols:number=6;
+bodr:number=1;
   constructor() { }
 
   ngOnInit(): void {
