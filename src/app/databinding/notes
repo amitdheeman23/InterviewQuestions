@@ -1,0 +1,38 @@
+--------------------Data binding in Angular----------------------------
+
+hum ts file se data bhej kr html template mai show krte hai ya html template se data change krke ts variable ki value
+change krte hai. isi ko data binding khate hai.
+
+****Hum data ko bind krate hai and show krate hai dynamically apne HTML page pr***
+
+Importnat=> 
+Angular mai data binding kai two way hote hai.
+
+1. One-Way Data Binding.
+2. Two-way Data Binding.
+
+=======One-Way Date binding===========
+One-Way binding ko hum Two classification mai bat skte hai
+1.Component To view 
+2.View To Component
+
+**Component To view :- Isme hum ts file se data ko html file mai bind krke show krate hai.
+ data ko bind krne kai bhot srae trike kai like.
+
+ 1.Interpolation Binding.
+ 2.Property Binding.
+ 3.Style Binding.
+ 4.Class Binding.
+ 5.Attribute Binding.
+
+**View To Component data ko HTML se ts file kai kisi variable mai late hai isko view To Component khte hai and isme hum event binding ka use krte hai by click.
+
+**Two-way binding: For Example Jb hum kisi text box mai data endter krte hai to vo ts file mai bhi change hota hai agr hume ts pr 
+kisi variable mai assigne kiya hua hai to isko hum Two-way binding khete hai.
+
+****Data Binding ko hum three categories mai hum isko grouping kr skte hai*****
+1.Source (Component)-To-View
+2.View-to-source(Component)
+3.Two-way Data binding.
+
+
