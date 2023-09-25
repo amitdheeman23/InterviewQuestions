@@ -1,0 +1,6 @@
+Property binding in Angular
+Propertybinding yai bhi ek one way binding hoti hai. isme hum ts file kai variable ki value ko bind krte hai property
+binding thru.
+
+isme hum Array bracket kai under hum property ko rkhte hai and expression ko assign krdete hai.
+Format: [property]='expression'
