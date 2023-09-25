@@ -33,6 +33,6 @@ kisi variable mai assigne kiya hua hai to isko hum Two-way binding khete hai.
 ****Data Binding ko hum three categories mai hum isko grouping kr skte hai*****
 1.Source (Component)-To-View
 2.View-to-source(Component)
-3.Two-way Data binding.
+3.Two-way Data binding..
 
 
