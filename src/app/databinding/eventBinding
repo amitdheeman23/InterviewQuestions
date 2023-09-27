@@ -1,0 +1,2 @@
+Event binding bhi ek one-way bindi hai kyko hum kisi button pr click krke kisi function ko hit krte hai or jo bhi code
+function mai likha hota hai vo run hota hai iski ko event binding khete hai.

@@ -6,12 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databinding.component.scss']
 })
 export class DatabindingComponent implements OnInit {
-//Attribute data binding
-cols:number=6;
-bodr:number=1;
+//Evenit Binding 
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submit(){
+    console.log('ok');
+    
   }
 
 }
