@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databinding.component.scss']
 })
 export class DatabindingComponent implements OnInit {
-//Evenit Binding 
+//Two way data bainding
+
+data:string="Amit"
 
   constructor() { }
 
@@ -15,6 +17,12 @@ export class DatabindingComponent implements OnInit {
 
   submit(){
     console.log('ok');
+    
+  }
+
+  getData(e:any){
+    console.log(e.target.value);
+    this.data=e.target.value;
     
   }
 

@@ -1,2 +1,4 @@
 <p>databinding works!</p>
-<button (click)="submit()">Click</button>
+Enter Your Name<input [value]="data" (input)="getData($event)"/><br>
+
+Your Name:{{data}}
