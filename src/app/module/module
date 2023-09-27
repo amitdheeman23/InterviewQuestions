@@ -23,6 +23,7 @@ Bootstrap: Jo component sbse phele lod hota hai usme usi component ka name hota 
 Export:Jis component ko export krta hota hai usko export mai rkhte hai.
 
 Note: Jb bhi hum apni aplication kai url ko hit krte hai to first tym module hi load hota hai
+//
 
 
 
