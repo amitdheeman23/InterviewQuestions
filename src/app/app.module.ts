@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
-import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModuleComponent } from './module/module.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     HomeComponent,
-    DatabindingComponent
+    ModuleComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
 
   ],
   providers: [],

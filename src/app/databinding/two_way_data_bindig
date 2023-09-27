@@ -1,5 +1,0 @@
-Two-way data binding mai ts file and HTM file pr data change hota hai 
-jb hum kisi textbox mai data enter krte hai ot vo data ts file kai variable ki value change hti hai isi ko
-two ay data binding bolte hai.
-
-format: <input [value]="data" (input)=""
