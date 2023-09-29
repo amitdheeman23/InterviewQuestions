@@ -1,0 +1,16 @@
+Directives:
+1.Directives HTML ko daynamic kr deta hai
+2.Directives DOM kai structure and bheviour ko change krta hai.
+3.Hum Directly HTML pr ngFor loop if else condition lga skte hai by Directives.
+
+
+__________Angular mai Directives ko three bhago mai bata gya hai____________
+1.Component Directives
+2.Stractual Directives
+3.Attribute Directives
+
+*Component Directives: Jb component khi load hota hai to tbhi component "Component Directive" khelata hai
+
+*Stractual Directives: Jiske sath Star lga hota hai Stratual Directive khe lata hai, like *ngIF,*ngFor,@ngSwitch,
+
+*Attribute Directives:Attribute Directive DOM kai bheviour ko chnage krta hai.
