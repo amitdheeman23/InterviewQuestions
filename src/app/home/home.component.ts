@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+// HotListener -------------
+clickStatus = "";
 
-  constructor() { }
+
+
+constructor(private el: ElementRef){
+
+}
 
   ngOnInit(): void {
   }
+  @HostListener("document:click", ["$event"]) outClickHandler(e: MouseEvent) {
+    if (this.el.nativeElement.contains(e.target)) {
+      this.clickStatus = "inside click";
+    } else {
+      this.clickStatus = "outside click";
+    }
+  }
 
+
+
+
+
+
+
+ 
 }
