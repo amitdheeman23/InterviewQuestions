@@ -1,0 +1,9 @@
+Selector:
+Selector kisi component ka instanc hots hai. selector ko jha rkhenge component whi call hoga.
+1.sbhi component ka apna selector hota hai
+2.
+
+Format: Selctor ko hum multiple format mai likh skte hai.
+1.<selectorname></selectorname>
+2.by class
+3.Hum selctor ka name change kr skte hai

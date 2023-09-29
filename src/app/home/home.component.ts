@@ -1,35 +1,33 @@
-import { Component, OnInit,HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+// @Component({
+//   selector: 'app-home',
+//   templateUrl: './home.component.html',
+//   styleUrls: ['./home.component.scss']
+// })  This is user with selector 
+
+// @Component({
+//   selector: '.app-home',
+//   templateUrl: './home.component.html',
+//   styleUrls: ['./home.component.scss']
+// }) This used with class 
+
+// @Component({
+//   selector: '[apphome]',
+//   templateUrl: './home.component.html',
+//   styleUrls: ['./home.component.scss']
+// }) Used By Array
 
 @Component({
-  selector: 'app-home',
+  selector: '[apphome]',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-// HotListener -------------
-clickStatus = "";
 
-
-
-constructor(private el: ElementRef){
-
-}
+  constructor() { }
 
   ngOnInit(): void {
   }
-  @HostListener("document:click", ["$event"]) outClickHandler(e: MouseEvent) {
-    if (this.el.nativeElement.contains(e.target)) {
-      this.clickStatus = "inside click";
-    } else {
-      this.clickStatus = "outside click";
-    }
-  }
 
-
-
-
-
-
-
- 
 }
