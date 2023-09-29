@@ -1,0 +1,8 @@
+**View Provider:Component ka meta data hai.
+1.iska use hum jb krte hai jb hum class ko component lavel ka krdete hai.
+2.Class ko component lavel ka bnanae kai liye class ko View Provider mai rkhte hai.
+3.Hum class ko @module lavel ki bhi btanskte hia but yai good prectice nhi hai kyoki jb bhi modula load hoga vo classbhi load ho jayegi
+chahe uska use ho ya na ho. isliye class ko componet lavel ka bnate hai kyoki jb bhi componelt load hoga vo class tbhi call hogi. jisse 
+Angular apication prformation pr koi iffect nhi pdta hai.
+
+4.Hum class ko component mai bhi directly bna skte hai
