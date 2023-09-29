@@ -1,0 +1,8 @@
+Component Level Provider:
+
+1.provide decorator @ngModule and component dono mai milta hai service kai liye.
+2.Agr hum koi service bnate hai or usko module provider mai rkhte hai to vo service module leval ki hojayegi or sbhi
+component pr available hoga.
+3.Agr componet provider mai service ko rkhte hai to service componet laver ki hoti hai jb bhi component load hoga tb yai
+service call
+hogi.
