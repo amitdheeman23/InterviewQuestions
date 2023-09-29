@@ -1,0 +1,5 @@
+ngIf, Then and else Directives:
+
+1.ngIf, Then and else yai Stractual directives hai.
+2.ngIf yai element ko DOM mai add and remove krta hai.
+<!-- Format: <div *ngIf="value"></div> -->

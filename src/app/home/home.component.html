@@ -1,5 +1,42 @@
 <nav>
     <h3>Home Component</h3>
 </nav>
+<!-- <h2>Usering ngIf</h2>
+<input type="radio" name="redio1" (click)="change(true)" />True <br>
+<input type="radio" name="redio1" (click)="change(false)" />False
 
+<div *ngIf="!isvalid">
+    This is not value data
+</div>
+<div *ngIf="isvalid">
+    This is value data
+</div> -->
 
+<!-- <h2>Usering ngIf else</h2>
+<input type="radio" name="redio1" (click)="change(true)" />True <br>
+<input type="radio" name="redio1" (click)="change(false)" />False
+
+<div *ngIf="isvalid ; else elseblock">
+    This is not value data
+</div>
+
+<ng-template #elseblock>
+    This is not value data==Else
+
+</ng-template> -->
+
+<h2>Using ngIf else then</h2>
+<input type="radio" name="redio1" (click)="change(true)" />True <br>
+<input type="radio" name="redio1" (click)="change(false)" />False
+
+<div *ngIf="isValid; then thenBlock; else elseBlock"></div>
+ 
+    <ng-template #thenBlock>
+        <!-- Content to display when 'isValid' is true -->
+        <p>This content is displayed when 'isValid' is true.</p>
+      </ng-template>
+      
+      <ng-template #elseBlock>
+        <!-- Content to display when 'isValid' is false -->
+        <p>This content is displayed when 'isValid' is false.</p>
+      </ng-template>

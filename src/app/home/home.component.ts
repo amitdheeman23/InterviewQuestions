@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isValid:boolean=true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  change(valid:boolean){
+
+    this.isValid=valid;
   }
 
 }
