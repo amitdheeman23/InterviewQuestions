@@ -5,8 +5,10 @@
 <h3>My Name Is Amit Sharma</h3>
 <!-- Parent Component: <input type="text" #Pcomponet (keyup)="0"/>
 <app-home [Pdata]="Pcomponet.value"></app-home> -->
-Parent Component: <input type="text" #Pcomonent (keyup)="0">
-<app-home [data]="Pcomonent.value"></app-home>
+Data Send From Parent Component: <input type="text" #Pcomonent (keyup)="0"><br>
+
+Data coming from Child Component:{{cData}}
+<app-home [data]="Pcomonent.value" (childevent)="getData($event)"></app-home>
 
 
 

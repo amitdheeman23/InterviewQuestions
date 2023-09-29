@@ -8,7 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title="Angular"
+  cData='';
   constructor(){
 
+  }
+
+  getData(e:any){
+    this.cData=e;
   }
 }
