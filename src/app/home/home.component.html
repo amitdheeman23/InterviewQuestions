@@ -1,10 +1,8 @@
-<h3>Using NgFor</h3>
+<h3>NgFor Grouping</h3>
 
-<!-- <ul>
-    <li *ngFor="let d of students; let i=index; let f=first; let l=last; let e=even;let o=odd;">{{i+1}}  {{d?.name}}  {{f}} {{l}} {{e}} {{o}}</li>
-</ul> -->
-<div *ngFor="let item of items; trackBy: trackByFunction">
-    {{item?.name}}
-  </div>
-
-<button (click)="clickOn()">Add</button>
+<ul *ngFor="let group of counteryDetails">
+    <li>{{group?.country}}</li>
+    <ul *ngFor="let gp of group?.people">
+        <li>{{gp?.name}}</li>
+    </ul>
+</ul>
