@@ -31,5 +31,30 @@ export class HomeComponent implements OnInit {
   }
 
 
+  getCssClass(flag:any){
+    console.log(flag);
+    
+
+    let cssClass;
+    if(flag=='Amit Kumar'){
+     cssClass={
+      'one':true,
+      'two':true
+     } 
+    }else{
+      cssClass={
+        'three':true,
+        'one':false,
+        'two':false
+    
+       } 
+    }
+    return cssClass;
+
+
+ 
+
+  }
+
 
 }
