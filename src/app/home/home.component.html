@@ -1,22 +1,10 @@
-<nav>
-    <h3>Home Component</h3>
-</nav>
+<h3>Using NgFor</h3>
 
-<div [ngSwitch]="name">
+<!-- <ul>
+    <li *ngFor="let d of students; let i=index; let f=first; let l=last; let e=even;let o=odd;">{{i+1}}  {{d?.name}}  {{f}} {{l}} {{e}} {{o}}</li>
+</ul> -->
+<div *ngFor="let item of items; trackBy: trackByFunction">
+    {{item?.name}}
+  </div>
 
-    <p *ngSwitchCase="'Mohan'">Hello Mohan</p>
-    <p *ngSwitchCase="'Sohan'">Hello Sohan</p>
-    <p *ngSwitchCase="'Johan'">Hello Johan</p>
-    <p *ngSwitchDefault="'Johan'">Hello Johan</p>
-</div>
-
-
-Enter your name:<input type="text" #txtName (keyup)="0"/>
-
-<div [ngSwitch]="txtName.value">
-
-    <p *ngSwitchCase="'Mohan'">Hello Mohan</p>
-    <p *ngSwitchCase="'Sohan'">Hello Sohan</p>
-    <p *ngSwitchCase="'Johan'">Hello Johan</p>
-    <p *ngSwitchDefault="'Johan'">Hello Default</p>
-</div>
+<button (click)="clickOn()">Add</button>
