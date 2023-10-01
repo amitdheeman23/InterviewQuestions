@@ -1,8 +1,8 @@
-<h3>NgFor Grouping</h3>
+<h3>ngStyle Daynamicaly</h3>
 
 <ul *ngFor="let group of counteryDetails">
-    <li>{{group?.country}}</li>
+    <li [ngStyle]="{'background-color':group?.country=='India' ? 'green':'red'}">{{group?.country}}</li>
     <ul *ngFor="let gp of group?.people">
-        <li>{{gp?.name}}</li>
+        <li [ngStyle]="{'background-color':gp?.name=='Amit Kumar' ? 'pink':'yellow'}">{{gp?.name}}</li>
     </ul>
 </ul>

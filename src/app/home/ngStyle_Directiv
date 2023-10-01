@@ -1,0 +1,5 @@
+ngStyle : ngStyle ka use krke hum html kai kisi bhi element ka color fornt etc change kr skte hai.
+
+Format Staticly: <div [ngStyle]="{'background-color':green}"></div>
+Format Daynamicaly: <div [ngStyle]="{'background-color':person.country==='UK'?'green':'red'}"></div>
+
