@@ -1,0 +1,10 @@
+*ngSwitch--
+
+NgSwitch ek structural directive hai. jisme hum condition base data ko show krate hai ya perform
+Nt:NgSwitch kis bhi trike ki value ko use kr leta hai and agr koi case match nhi hua to hum default ko use krte hai
+
+1.ngSwitch kaisath Star nhi lgta hai kyoki yai expression ko bind krta hai jo result provide krta hai.
+2.ngSwitchCase mai Starlgta hai kyki isme case match hota hai
+3.ngSwitchDefault mai Starlgta hai kyki isme case match hota hai
+4.Yai case sensitive hota hai
+4.Isme brack ka use nhi krte hai

@@ -1,42 +1,22 @@
 <nav>
     <h3>Home Component</h3>
 </nav>
-<!-- <h2>Usering ngIf</h2>
-<input type="radio" name="redio1" (click)="change(true)" />True <br>
-<input type="radio" name="redio1" (click)="change(false)" />False
 
-<div *ngIf="!isvalid">
-    This is not value data
-</div>
-<div *ngIf="isvalid">
-    This is value data
-</div> -->
+<div [ngSwitch]="name">
 
-<!-- <h2>Usering ngIf else</h2>
-<input type="radio" name="redio1" (click)="change(true)" />True <br>
-<input type="radio" name="redio1" (click)="change(false)" />False
-
-<div *ngIf="isvalid ; else elseblock">
-    This is not value data
+    <p *ngSwitchCase="'Mohan'">Hello Mohan</p>
+    <p *ngSwitchCase="'Sohan'">Hello Sohan</p>
+    <p *ngSwitchCase="'Johan'">Hello Johan</p>
+    <p *ngSwitchDefault="'Johan'">Hello Johan</p>
 </div>
 
-<ng-template #elseblock>
-    This is not value data==Else
 
-</ng-template> -->
+Enter your name:<input type="text" #txtName (keyup)="0"/>
 
-<h2>Using ngIf else then</h2>
-<input type="radio" name="redio1" (click)="change(true)" />True <br>
-<input type="radio" name="redio1" (click)="change(false)" />False
+<div [ngSwitch]="txtName.value">
 
-<div *ngIf="isValid; then thenBlock; else elseBlock"></div>
- 
-    <ng-template #thenBlock>
-        <!-- Content to display when 'isValid' is true -->
-        <p>This content is displayed when 'isValid' is true.</p>
-      </ng-template>
-      
-      <ng-template #elseBlock>
-        <!-- Content to display when 'isValid' is false -->
-        <p>This content is displayed when 'isValid' is false.</p>
-      </ng-template>
+    <p *ngSwitchCase="'Mohan'">Hello Mohan</p>
+    <p *ngSwitchCase="'Sohan'">Hello Sohan</p>
+    <p *ngSwitchCase="'Johan'">Hello Johan</p>
+    <p *ngSwitchDefault="'Johan'">Hello Default</p>
+</div>
