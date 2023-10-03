@@ -1,0 +1,77 @@
+<h3>Pipe</h3>
+<table border="1">
+    <tr>
+        <th>Emp Code</th>
+        <th>Emp Name</th>
+        <th>Emp Salary</th>
+        <th>Emp DOM</th>
+    </tr>
+    <tr *ngFor="let data of empList">
+        <td>{{data?.code | uppercase}}</td>
+        <td>{{data?.name | uppercase}}</td>
+        <td>{{data?.salary}}</td>
+        <td>{{data?.dob}}</td>
+
+    </tr>
+</table>
+
+<h3>Parameterize pipe</h3>
+<div>
+    {{dob | date:'medium'}}
+    {{salary | currency:"USD":true}}
+    <!-- parameterize pipe -->
+</div>
+
+<h3>Multiple/Chaninig Pile</h3>
+<div>
+    {{dob | date:'medium' | lowercase}}
+    {{dob | date:'fullDate' | uppercase | lowercase}}
+</div>
+
+<h3>Pipes with String</h3>
+<div>
+    <p>UpperCase: {{name | uppercase}}</p><br>
+    <p>LowerCase: {{position | lowercase}}</p><br>
+    <p>Slice: {{work | titlecase}}</p><br>
+    <p>Slice Example: {{work | slice:8}}</p><br>
+</div>
+
+<h3>Date, percent, decimal and currency pipe</h3>
+<div>
+    <h4>Date Pipe Example</h4>
+    <p>Date: {{dob | date:'shortDate'}}</p><br>
+    <h4>Number Pipe Example</h4>
+    <p>{{salary | percent}}</p><br>
+    <p>{{salary | percent:'2.4-8'}}</p><br>
+    <p>{{salary | number:'1.0-0'}}</p><br>
+
+</div>
+
+<h3>JSON Pipe</h3>
+<div>
+    <p> {{empList | json}}</p><br>
+
+    <p>{{empList | slice:1:2| json}}</p>
+</div>
+
+
+<h3>Custome pipe</h3>
+<div>
+    <table border="1">
+        <tr>
+            <th>Emp Code</th>
+            <th>Emp Name</th>
+            <th>Emp Salary</th>
+            <th>Emp DOM</th>
+            <th>Gender</th>
+        </tr>
+        <tr *ngFor="let data of empList">
+            <td>{{data?.code | uppercase}}</td>
+            <td>{{data?.name | mypipe:'name'}}</td>
+            <td>{{data?.salary | mypipe:'salary'}}</td>
+            <td>{{data?.dob}}</td>
+            <td>{{data?.gender}}</td>
+    
+        </tr>
+    </table>
+<!-- </div>| mypipe?.data?.gender -->

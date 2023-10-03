@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MypipePipe } from './mypipe.pipe';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ParentComponent,
     HomeComponent,
+    MypipePipe,
   ],
   imports: [
     BrowserModule, 
