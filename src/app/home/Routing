@@ -1,0 +1,7 @@
+Routing:
+1.Routing Ek mechanism hai jiski help se hum ek componet se dusre componet pr jate hai isi ko hum rauting pr krta hai.
+2.Angular framwork manly SPA pr focus krta hai SPA matlab (Signgle Page Architecture) 
+isme single html page hota hai jo use ki request ko daynamicaly load and upload krta hai.
+matlb jb user kisi link pr click krta hai to vo usko daynamical dusre component pr load krdeta hai isme page ek hi hota hai but multiple compennet ho skte hai.
+
+

@@ -15,12 +15,6 @@ export class HomeComponent implements OnInit {
 
   ];
 
-  dob=new Date(1995,8,2);
-  salary=1222;
-
-  name:string="Amit"
-  position:string="Software Developer"
-  work:string="Software Development"
   constructor() { }
 
   ngOnInit(): void {
