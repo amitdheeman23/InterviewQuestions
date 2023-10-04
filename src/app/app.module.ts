@@ -6,8 +6,8 @@ import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { ShareDataService } from './share-data.service';
-import { ExapmleService } from './exapmle.service';
+import { TwoComponent } from './fraturemodule2/two/two.component';
+import { Data3Service } from './data3.service';
 
 
 @NgModule({
@@ -16,6 +16,7 @@ import { ExapmleService } from './exapmle.service';
     ParentComponent,
     HomeComponent,
     PagenotfoundComponent,
+    TwoComponent,
   ],
   imports: [
     BrowserModule, 
@@ -25,7 +26,7 @@ import { ExapmleService } from './exapmle.service';
 
 
   ],
-  providers: [ShareDataService,ExapmleService],
+  providers: [Data3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

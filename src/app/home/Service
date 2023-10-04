@@ -1,4 +1,0 @@
-Service Part-1:
-Service:Service ek common code hota hai jo ki kisi specific task ko perform krne kai liye bnaya jata hai.
-Injectable(): Service mai Injectable() ka use ek sevice ko kisi dusri sevice mai import krne kai liye use krte hai.
-

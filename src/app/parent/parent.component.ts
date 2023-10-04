@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { ShareDataService } from '../share-data.service';
 
 @Component({
   selector: 'app-parent',
@@ -7,16 +6,13 @@ import { ShareDataService } from '../share-data.service';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
-  constructor(private shareDataService:ShareDataService) { }
-  name="Amit Kumar";
-  lists:any=[];
+  constructor() { }
+
 
   ngOnInit(): void {
-    this.lists=this.shareDataService.getNumber();
   }
 
-  callChildMethod() {
-  }
+ 
 
 
 }

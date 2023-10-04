@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ShareDataService } from '../share-data.service';
 
 @Component({
   selector: 'app-home',
@@ -17,23 +16,15 @@ export class HomeComponent implements OnInit {
     { code: 'emp004', name: "Pankaj", salary: 100.2, dob: '01/02/1993', gender: "male" },
 
   ];
-  little='';
-  otherMsg=''
-  lists:any=[];
 
-  constructor(private shareDataService:ShareDataService) { }
+
+  constructor() { }
 
   ngOnInit(): void {
-   console.log('shareDataService',this.shareDataService.getmesage());
-   this.little=this.shareDataService.getmesage()
-   this.otherMsg=this.shareDataService.getMessageFromExampleService();
-   this.lists=this.shareDataService.getNumber();
+
    
   }
 
-  addnumber(val:any){
-    this.shareDataService.addNumber(val);
-  }
 
 
 
