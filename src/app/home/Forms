@@ -14,6 +14,14 @@ Isme hum sara work template pr hi kr lete hai isliye isko Template-driven form b
 but isme hum chote level pr work krte hai bade level pr is pr work krne pr problem aati hai.
 isme unit testing krne mai bhot hi problem ho jati hai.
 
+--------------------Template-driven forms Feature-------------------
+1.Easy to use
+2.Suitable for simple scenarios.
+3.Similat to Angular 1.0
+3.Isme bhi hum Two way data binding use krte hai.
+4.Unit testing krne mai problem ho jati hai.
+
+
 *********Model-driven forms (Reactive forms):
 Isme hum component level pr work krte hai. and formGroup built in class ka use krke hum ek module create krte hai
 uske bad module ko hum HTML form mai bind krdete hai.
