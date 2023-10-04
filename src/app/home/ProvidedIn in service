@@ -1,5 +1,0 @@
-
-Tree Shakeable Providers:Iska use unuse code ko remove krne mai kiya jata hai jb application ka bandal bnta hai or jb build krte hai
-jo code kisi bhi component mai use nhi kiya ja rha hai usko remove krdiya jata hai isse.
-
-

@@ -1,0 +1,28 @@
+Form:
+1.Kisi bhi aplication kai liye main building block hota hai.
+2.User se data lena and show krana yai form form se hi krate hai.
+
+
+
+__________Angular mai two type forms hote hai___________
+
+1.Template-driven forms
+2.Model-driven forms (Reactive forms)
+
+*********Template-driven forms:
+Isme hum sara work template pr hi kr lete hai isliye isko Template-driven form bolte hai
+but isme hum chote level pr work krte hai bade level pr is pr work krne pr problem aati hai.
+isme unit testing krne mai bhot hi problem ho jati hai.
+
+*********Model-driven forms (Reactive forms):
+Isme hum component level pr work krte hai. and formGroup built in class ka use krke hum ek module create krte hai
+uske bad module ko hum HTML form mai bind krdete hai.
+iske liye hume ReactiveFormsModule ko app.module.ts file mai import krna pdta hai.
+
+isko reactive form isliye bolte hai kyoki hum HTML mai bhot km work krte hai jb hum iss form ko use krte hai and isme 
+daynamicaly work and testing bhot easy ho jati hai and yai codding sepret pasrt ho jata hai.
+
+
+
+
+
