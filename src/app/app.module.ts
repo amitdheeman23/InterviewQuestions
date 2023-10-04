@@ -6,6 +6,7 @@ import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MypipePipe } from './mypipe.pipe';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MypipePipe } from './mypipe.pipe';
     ParentComponent,
     HomeComponent,
     MypipePipe,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule, 
