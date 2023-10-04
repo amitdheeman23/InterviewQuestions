@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MypipePipe } from './mypipe.pipe';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ShareDataService } from './share-data.service';
+import { ExapmleService } from './exapmle.service';
 
 
 @NgModule({
@@ -14,7 +15,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AppComponent,
     ParentComponent,
     HomeComponent,
-    MypipePipe,
     PagenotfoundComponent,
   ],
   imports: [
@@ -25,7 +25,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
   ],
-  providers: [],
+  providers: [ShareDataService,ExapmleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

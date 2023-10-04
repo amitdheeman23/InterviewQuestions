@@ -18,4 +18,13 @@
     </table>
     <!-- </div>| mypipe?.data?.gender -->
 
-    <h3>Router Outlet </h3>
+    <h3>Router Outlet {{little}}*******************{{otherMsg}}</h3>
+    <h3>Home Component</h3>
+
+    <input type="text" #num/><br>
+    <button type="button" (click)="addnumber(num.value)" >Add</button>
+
+    <ul>
+        <li *ngFor="let d of lists">{{d}}</li>
+    </ul>
+    
