@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     array.patchValue(['Kumar','ji'])
     
     console.log(array.value);
-    console.log(array.status);
+    console.log(array.status);//
 
 
     
