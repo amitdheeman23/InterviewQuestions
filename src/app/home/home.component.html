@@ -2,7 +2,13 @@
     <h3>Form</h3>
     <form class="row" [formGroup]="form">
         <div class="form-group">
-            <input type="text" class="form-control" formControlName="name" placeholder="Enter value">
+            <input type="text" class="form-control" formControlName="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" formControlName="address" placeholder="Enter address">
         </div>
         <div class="form-group">
             <button class="btn btn-primary" >Click</button>

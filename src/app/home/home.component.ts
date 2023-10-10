@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { signUpform } from './signUpform';
 
 @Component({
   selector: 'app-home',
@@ -12,13 +13,24 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.form=new FormGroup({
-      name:new FormControl('')
+      name:new FormControl(''),
+      email:new FormControl(''),
+      address:new FormControl(''),
     });
 
-    this.form.get('name')?.valueChanges.subscribe((res)=>{
-      console.log(res);
+    this.form.valueChanges.subscribe((uname:signUpform)=>{
+      console.log('name',uname.name);
+      console.log('email',uname.email);
+      console.log('address',uname.address);
       
     })
+
+     this.form.get('email')?.statusChanges.subscribe((status)=>{
+      console.log('change_Status',status);
+      
+     })
+
+  
   }
 
 
