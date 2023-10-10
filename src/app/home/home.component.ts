@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup,FormArray, Validators } from '@angular/forms';
 import { signUpform } from './signUpform';
 
 @Component({
@@ -12,29 +12,18 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.form=new FormGroup({
-      name:new FormControl(''),
-      email:new FormControl(''),
-      address:new FormControl(''),
-    });
-
-    this.form.valueChanges.subscribe((uname:signUpform)=>{
-      console.log('name',uname.name);
-      console.log('email',uname.email);
-      console.log('address',uname.address);
-      
-    })
-
-     this.form.get('email')?.statusChanges.subscribe((status)=>{
-      console.log('change_Status',status);
-      
-     })
-
-  
-  }
+    const array=new FormArray([
+      new FormControl('Amit'),
+      new FormControl('Smarma'),
+      new FormControl('Bd'),
+    ]);
 
 
+    array.patchValue(['Kumar','ji'])
+    
+    console.log(array.value);
+    console.log(array.status);
 
 
- 
-}
+    
+  }}

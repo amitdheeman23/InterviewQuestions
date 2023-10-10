@@ -1,0 +1,3 @@
+FormArray:FormArray ek class hai jo ki formControl and formgroup ka jo aaray jo bnta hai uski value and state ko track krta hai.
+
+FormArray ek package hota hia or isko import krta hota hai use krne kai liye.
