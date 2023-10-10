@@ -11,9 +11,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  Register(ngForm:any){
-    console.log(ngForm.controls);
-    
-
-  }
+ 
 }
