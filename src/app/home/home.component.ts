@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,FormArray, Validators } from '@angular/forms';
-import { signUpform } from './signUpform';
 
 @Component({
   selector: 'app-home',
@@ -8,22 +7,29 @@ import { signUpform } from './signUpform';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  form!:FormGroup;
+  form!:any;
   constructor() { }
 
   ngOnInit(): void {
-    const array=new FormArray([
-      new FormControl('Amit'),
-      new FormControl('Smarma'),
-      new FormControl('Bd'),
-    ]);
+    this.form=new FormGroup({
+      email:new FormControl(''),
+      contactNos:new FormArray([
+        new FormControl(''),
+        new FormControl(''),
+      ])
+    });
+  }
 
-
-    array.patchValue(['Kumar','ji'])
+  addContactNo(){
+    this.form.get('contactNos').push(new FormControl())
+  }
+  submit(){
+    console.log(this.form.get('contactNos').value);
     
-    console.log(array.value);
-    console.log(array.status);//
+  }
 
+  delete(i:number){
+    this.form.get('contactNos').removeAt(i)
+  }
+}
 
-    
-  }}
