@@ -11,25 +11,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.form=new FormGroup({
-      email:new FormControl(''),
-      contactNos:new FormArray([
-        new FormControl(''),
-        new FormControl(''),
-      ])
-    });
   }
 
-  addContactNo(){
-    this.form.get('contactNos').push(new FormControl())
-  }
-  submit(){
-    console.log(this.form.get('contactNos').value);
+  onSubmit(e:any){
     
-  }
-
-  delete(i:number){
-    this.form.get('contactNos').removeAt(i)
   }
 }
 
