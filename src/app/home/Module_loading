@@ -1,0 +1,10 @@
+Module_Loading:yha pr three loading hai
+1.Eager Loading
+2.Lazy Loading
+3.Preloading
+
+
+Eager Loading:Eager loading mai sbhi module and component and all services ek sat load ho jati hai jisse application ki performation pr efect pdta hai.
+
+agr humne default module mai sbhi module and conponents call kra rkhe hai to iske eager loadig bolte hai
+
